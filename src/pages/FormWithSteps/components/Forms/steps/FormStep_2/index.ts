@@ -1,1 +1,1 @@
-export { FormStep_2 } from "./FormStep_2";
+export { FormStep_2 as default } from "./FormStep_2";

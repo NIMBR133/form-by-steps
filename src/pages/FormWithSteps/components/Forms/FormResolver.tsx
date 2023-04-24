@@ -1,10 +1,13 @@
-import { FC, useMemo } from "react";
+import React, { FC, lazy, useMemo } from "react";
 
 import { useAppSelector } from "@/store";
 import { STEPS } from "@/store/forms/forms-interface";
 import { selectCurrentStep } from "@/store/forms/forms-slice";
 
-import { FormStep_1, FormStep_2, FormStep_3or4, FormStep_5 } from "./steps";
+const FormStep_1 = lazy(() => import("./steps/FormStep_1"));
+const FormStep_2 = lazy(() => import("./steps/FormStep_1"));
+const FormStep_3or4 = lazy(() => import("./steps/FormStep_3or4"));
+const FormStep_5 = lazy(() => import("./steps/FormStep_5"));
 
 export const FormResolver: FC = () => {
   const currentStep = useAppSelector(selectCurrentStep);
