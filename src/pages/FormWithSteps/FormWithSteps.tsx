@@ -4,13 +4,15 @@ import { FormResolver } from "./components/Forms";
 import { NavStepsBlock } from "./components/NavStepsBlock";
 import { Styles } from "./FormWithSteps.style";
 
-const { Wrapper } = Styles;
+const { Wrapper, WrapperContent } = Styles;
 
 export const FormWithSteps: FC = () => {
   return (
     <Wrapper>
-      <NavStepsBlock />
-      <FormResolver />
+      <WrapperContent>
+        <NavStepsBlock />
+        <FormResolver />
+      </WrapperContent>
     </Wrapper>
   );
 };

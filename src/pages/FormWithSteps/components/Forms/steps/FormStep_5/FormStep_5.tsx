@@ -46,7 +46,9 @@ export const FormStep_5: FC = () => {
   };
 
   const onNextStep = (data: { values: FormDataStep_5[] }) => {
-    dispatch(endForm(data.values));
+    const prepareData = data.values.filter((soc) => soc.link && soc.type);
+
+    dispatch(endForm(prepareData));
     setIsModalOpen(true);
   };
 
