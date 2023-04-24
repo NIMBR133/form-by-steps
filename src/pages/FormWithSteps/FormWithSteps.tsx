@@ -1,4 +1,4 @@
-import { FC, Suspense } from "react";
+import { FC } from "react";
 
 import { FormResolver } from "./components/Forms";
 import { NavStepsBlock } from "./components/NavStepsBlock";
@@ -11,9 +11,7 @@ export const FormWithSteps: FC = () => {
     <Wrapper>
       <WrapperContent>
         <NavStepsBlock />
-        <Suspense>
-          <FormResolver />
-        </Suspense>
+        <FormResolver />
       </WrapperContent>
     </Wrapper>
   );
