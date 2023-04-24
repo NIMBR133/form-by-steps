@@ -779,6 +779,7 @@ function print() { __p += __j.call(arguments, '') }
     padding-right: 16px;
     padding-left: 16px;
     max-height: 100%;
+    max-width: 100vw;
   }
 `,Fee=pt.header`
   margin-bottom: 64px;
