@@ -5,6 +5,7 @@ import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/form-by-steps/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -18,5 +19,4 @@ export default defineConfig({
       },
     }),
   ],
-  base: "/form-by-steps/",
 });
