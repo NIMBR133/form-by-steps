@@ -22,5 +22,5 @@ export const GlobalStyles = createGlobalStyle`
   html{scroll-behavior: smooth;}
   h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;margin:0;padding:0;}
   *{padding:0;margin:0;border:0;}
-  #root{width: 100%;height: 100%; background: #f2f5fa;}
+  #root{width: 100%;min-height: 100%; background: #f2f5fa;}
 `;

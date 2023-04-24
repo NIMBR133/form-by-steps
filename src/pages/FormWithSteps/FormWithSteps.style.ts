@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   }
 
   @media ${mediaDevice.md} {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
   }
 `;
 

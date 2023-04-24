@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   align-items: center;
 
   @media ${mediaDevice.lg} {
-    margin-top: 10px;
+    padding-top: 16px;
     box-shadow: 0px -4px 8px 0px rgba(34, 60, 80, 0.1);
   }
 `;
@@ -34,7 +34,7 @@ const Content = styled.section`
 
   @media ${mediaDevice.md} {
     padding-right: 16px;
-    padding-bottom: 16px;
+    padding-left: 16px;
     max-height: 100%;
   }
 `;
